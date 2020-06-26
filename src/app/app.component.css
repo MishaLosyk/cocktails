@@ -1,0 +1,20 @@
+main {
+    display: flex;
+}
+
+app-filter {
+
+    display: inline-block;
+    width: 250px;
+    height: 100%;
+    border-right: 1px solid #D0D0D0;
+
+}
+
+app-content {
+
+    display: inline-block;
+    width: calc(100% - 250px);
+    height: 100%;
+
+}

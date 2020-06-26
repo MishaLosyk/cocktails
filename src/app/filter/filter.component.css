@@ -1,0 +1,81 @@
+.filter-wrapper {
+
+    display: block;
+    height: 100vh;
+    margin-top: 35px;
+    margin-left: 35px;
+    margin-right: 30px;
+    color: #818181;
+    line-height: 16px;
+    z-index: 1;
+
+}
+
+.filter-item {
+
+    margin-bottom: 20px;
+    margin-left: 5px;
+
+}
+
+
+.checkb {
+
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.checkb+label {
+    
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    width: 100%;
+    cursor: pointer;        
+
+}
+
+.checkb+label::before{
+
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1.5px solid #818181;
+    border-radius: 4px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+
+}
+
+
+  .checkb:checked+label::before {
+      background-image: url("../../assets/checked.svg");
+      background-size: 80%;
+      border: 1.5px solid;
+      
+  }
+
+
+
+button {
+
+    width: 180px;
+    height: 40px;
+    background-color: #4E4E4E;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    
+
+}

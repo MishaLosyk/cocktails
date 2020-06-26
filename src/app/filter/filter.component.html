@@ -1,0 +1,14 @@
+<div class="filter-wrapper">
+
+    <form [formGroup]="form" (ngSubmit)="submit()">
+
+        <div class="filter-item" formArrayName="filters"*ngFor="let order of form.controls['filters']['controls']; let i = index">
+            <input [checked]="'true'" type="checkbox" id='{{filtersData[i].id}}' class='checkb' [formControlName]="i">
+            <label for="{{filtersData[i].id}}">{{filtersData[i].id}}</label>
+        </div>
+
+        <button>Apply</button>
+    </form>
+
+
+</div>

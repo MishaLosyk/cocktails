@@ -1,0 +1,19 @@
+<div class="content-wrapper">
+
+    <div class="category" *ngFor='let cat of cocktail.cocktailsDB; let i = index'>
+        <div class="cat-wrap" *ngIf='cat.state'>  
+            <div class="h1">
+                <h1>{{cat.strCategory}}</h1>
+            </div>
+            <div class="items">
+
+                <article *ngFor='let cock of cat.cocktails'>
+                    <img src="{{cock.strDrinkThumb}}" alt="">
+                    <div class="h2"><p title='{{cock.strDrink}}'>{{cock.strDrink}}</p></div>
+                </article>
+            </div>
+        </div>    
+    </div>
+    
+
+</div>
